@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Feliz Cumpleaños</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #fceabb, #f8b500);
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .card {
+      background: white;
+      padding: 30px 40px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      max-width: 400px;
+      animation: fadeIn 1.5s ease;
+    }
+
+    h1 {
+      color: #f39c12;
+    }
+
+    p {
+      font-size: 18px;
+      margin: 15px 0;
+    }
+
+    .heart {
+      color: red;
+      font-size: 24px;
+      animation: beat 1s infinite;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes beat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>🎉 ¡Feliz Cumpleaños! 🎉</h1>
+    <p>Hoy es un día especial y solo quería desearte lo mejor.</p>
+    <p>Que la vida te regale felicidad, paz y mucho amor.</p>
+    <p>Gracias por lo que fuimos, y sinceramente... te deseo lo mejor. ✨</p>
+    <div class="heart">❤️</div>
+  </div>
+</body>
+</html>
